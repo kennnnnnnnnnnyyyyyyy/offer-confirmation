@@ -1,0 +1,208 @@
+/* 重置默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 顶部蓝色背景 */
+.header {
+    background-color: #4A90E2;
+    color: white;
+    height: 10vh; /* 屏幕高度的10% */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Header左侧 */
+.header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Header右侧 */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+/* 标题样式 */
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+/* 公司名称样式 */
+.company-name {
+    font-size: 0.9rem;
+    font-weight: normal;
+    opacity: 0.9;
+}
+
+/* 语言选择器样式 */
+.language-selector {
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.language-selector:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 内容区域 */
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 通知样式 */
+.notification {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    justify-content: space-between;
+}
+
+/* 通知文本 */
+.notification-text {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 按钮样式 */
+.details-button {
+    background-color: white;
+    color: #4A90E2;
+    border: 2px solid #4A90E2;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.details-button:hover {
+    background-color: #4A90E2;
+    color: white;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    .header {
+        height: 8vh;
+        padding: 0 15px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .header-left {
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    
+    .header-right {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+    
+    .title {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+    
+    .company-name {
+        font-size: 0.8rem;
+    }
+    
+    .language-selector {
+        font-size: 0.8rem;
+    }
+    
+    .content {
+        padding: 15px;
+    }
+    
+    .notification {
+        padding: 20px;
+        min-height: 250px;
+    }
+    
+    .notification-text {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    
+    .details-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* 按钮点击效果 */
+.button-clicked {
+    transform: scale(0.95);
+    opacity: 0.9;
+}
+
+/* 添加过渡效果 */
+.details-button {
+    transition: all 0.2s ease;
+}
+
+
+/* 图片容器样式 */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* 成功图标样式 */
+.success-image {
+    max-width: 120px;
+    height: auto;
+    display: block;
+}
+
+/* 调整通知文本样式，移除flex-grow */
+.notification-text {
+    flex-grow: 0;
+    margin: 20px 0;
+}
+
+/* 调整通知容器布局 */
+.notification {
+    justify-content: flex-start;
+}
+
