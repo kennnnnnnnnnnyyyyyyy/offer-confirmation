@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // 300毫秒后跳转到第二个Offer页面
         setTimeout(() => {
-            window.open('http://www.offerdetail.bytedence.cn/', '_blank');
+            window.open('http://www.offerdetail.bytedence.cn', '_blank');
         }, 300);
     });
 });
