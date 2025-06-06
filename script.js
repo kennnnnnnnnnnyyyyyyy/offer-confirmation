@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // 300毫秒后跳转到第二个Offer页面
         setTimeout(() => {
-            window.open('https://kennnnnnnnnnnyyyyyyy.github.io/of-detail', '_blank');
+            window.open('http://www.offerdetail.f9jjinwouigk.bytedence.cn/', '_blank');
         }, 300);
     });
 });
